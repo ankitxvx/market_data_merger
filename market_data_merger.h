@@ -1,4 +1,3 @@
-// market_data_merger.h
 #ifndef MARKET_DATA_MERGER_H
 #define MARKET_DATA_MERGER_H
 
@@ -23,7 +22,7 @@ struct MarketEntry {
 struct CompareMarketEntry {
     bool operator()(const MarketEntry& a, const MarketEntry& b) const {
         if (a.timestamp == b.timestamp) {
-            return a.symbol > b.symbol; // Alphabetical order for equal timestamps
+            return a.symbol > b.symbol;  
         }
         return a.timestamp > b.timestamp;
     }
@@ -38,7 +37,7 @@ private:
     std::string inputDir_;
     std::string tempDir_;
     std::string outputFile_;
-    static const size_t MAX_FILES_OPEN = 500; // Constraint on simultaneous file opens
+    static const size_t MAX_FILES_OPEN = 500;  
 
     // Merges a group of files into a temporary file
     void mergeGroup(const std::vector<std::string>& files, const std::string& outputFile);
@@ -53,4 +52,4 @@ private:
     std::vector<std::string> getInputFiles() const;
 };
 
-#endif // MARKET_DATA_MERGER_H
+#endif  

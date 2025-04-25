@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/ASUS/source/repos/market_data_merger",
-      "program": "c:/Users/ASUS/source/repos/market_data_merger/build/Debug/outDebug",
+      "cwd": "c:/Users/ASUS/source/repos/Ankit_Vishwakarma_bestex_research",
+      "program": "c:/Users/ASUS/source/repos/Ankit_Vishwakarma_bestex_research/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

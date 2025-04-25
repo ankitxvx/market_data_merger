@@ -1,4 +1,3 @@
-// main.cpp
 #include "market_data_merger.h"
 #include <iostream>
 
@@ -7,7 +6,7 @@ int main(int argc, char* argv[]) {
        std::cerr << "Usage: " << argv[0] << " <input_dir> <temp_dir> <output_file>" << std::endl;
        return 1;
    }
-
+ 
    std::string inputDir = argv[1];
    std::string tempDir = argv[2];
    std::string outputFile = argv[3];
